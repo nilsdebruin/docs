@@ -28,7 +28,7 @@ Let's create our first pull request with a change and see this in action:
 
 3. In your repository settings > Actions ensure that the Workflow Read and Write permissions are assigned - This will allow the workflow to post comments on your PRs
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Add environment variables into your Github Action Secrets (cloud keys are a requirement since digger needs to connect to your account for coordinating locks)
    * AWS\_ACCESS\_KEY\_ID
@@ -64,6 +64,6 @@ In this tutorial we reused an existing sample repository to set up our first col
 **Next steps**
 
 * Managing your own state backend
-* Using digger with [GCP](../gcp-specific/) and [Azure](../azure-specific/setting-up-azure-+-gh-actions.md)
+* Using digger with [GCP](../cloud-providers/gcp.md) and [Azure](../cloud-providers/azure.md)
 * Using digger with [Bitbucket](../ci-systems/bitbucket.md), [Gitlab](../ci-systems/gitlab.md) and [Jenkins](../ci-systems/jenkins.md)
 

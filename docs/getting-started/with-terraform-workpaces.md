@@ -11,7 +11,7 @@ Let's create our first pull request with a change and see this in action:
 
 3. In your repository settings > Actions ensure that the Workflow Read and Write permissions are assigned - This will allow the workflow to post comments on your PRs
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 4.  Add environment variables into your Github Action Secrets (cloud keys are a requirement since digger needs to connect to your account for coordinating locks).  In this case we are setting AWS keys for this demo but you can follow [GCP](https://diggerhq.gitbook.io/digger-docs/cloud-providers/gcp) or [Azure](https://diggerhq.gitbook.io/digger-docs/cloud-providers/azure) steps as seen fit.
 
