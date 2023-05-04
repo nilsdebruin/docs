@@ -33,8 +33,7 @@ Digger runs without a backend but uses a DynamoDB table to keep track of all the
                 "dynamodb:CreateTable",
                 "dynamodb:Delete*",
                 "dynamodb:Update*",
-                "dynamodb:PutItem",
-                "dynamodb:CreateTable"
+                "dynamodb:PutItem"
             ],
             "Resource": "arn:aws:dynamodb:*:*:table/DiggerDynamoDBLockTable"
         }
