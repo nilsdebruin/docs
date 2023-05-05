@@ -10,6 +10,7 @@
   * [digger.yml](docs/digger.yml.md)
   * [Versioning](configuration/versioning.md)
   * [Disable auto-checkout](configuration/disable-auto-checkout.md)
+  * [Multiple cloud accounts](configuration/multiple-cloud-accounts.md)
 * [Features](docs/features/README.md)
   * [Projects](docs/features/projects.md)
   * [Workspaces](docs/features/workspaces.md)
