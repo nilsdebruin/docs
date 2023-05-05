@@ -23,6 +23,7 @@
 * [GCP-specific](docs/cloud-providers/gcp.md)
   * [Setting up GCP + GH Actions](gcp-specific/setting-up-gcp-+-gh-actions.md)
   * [Federated OIDC access](gcp-specific/federated-oidc-access.md)
+  * [Store plans in a Bucket](gcp/store-plans-in-a-bucket.md)
 * [Azure-specific](azure-specific/README.md)
   * [Setting up Azure + GH Actions](docs/cloud-providers/azure.md)
 * [CI Systems](docs/ci-systems/README.md)
