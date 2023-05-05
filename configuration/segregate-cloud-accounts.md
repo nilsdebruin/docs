@@ -1,4 +1,4 @@
-# Multiple cloud accounts
+# Segregate cloud accounts
 
 You can configure Digger to use different accounts for storing locks and for the target infra to plan / apply. This can even be different cloud providers - eg locks in AWS while managing GCP.
 
