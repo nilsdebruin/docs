@@ -8,7 +8,7 @@
 * [How it works](docs/how-it-works.md)
 * [Configuration](configuration/README.md)
   * [digger.yml](docs/digger.yml.md)
-  * [Versioning](configuration/versioning.md)
+  * [Specifying version](configuration/versioning.md)
   * [Disable auto-checkout](configuration/disable-auto-checkout.md)
   * [Multiple cloud accounts](configuration/multiple-cloud-accounts.md)
 * [Features](docs/features/README.md)
