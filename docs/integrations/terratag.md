@@ -1,3 +1,0 @@
-# Terratag
-
-Docs coming soon

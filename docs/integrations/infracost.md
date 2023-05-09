@@ -1,3 +1,0 @@
-# Infracost
-
-Docs coming soon

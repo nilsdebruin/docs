@@ -65,5 +65,5 @@ In this tutorial we reused an existing sample repository to set up our first col
 
 * Managing your own state backend
 * Using digger with [GCP](../cloud-providers/gcp.md) and [Azure](../cloud-providers/azure.md)
-* Using digger with [Bitbucket](../ci-systems/bitbucket.md), [Gitlab](../ci-systems/gitlab.md) and [Jenkins](../ci-systems/jenkins.md)
+* Using digger with [Bitbucket](broken-reference), [Gitlab](broken-reference) and [Jenkins](broken-reference)
 
