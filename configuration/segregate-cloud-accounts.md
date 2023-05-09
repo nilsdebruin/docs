@@ -48,7 +48,7 @@ workflows:
       - name: AWS_ACCESS_KEY_ID
         value_from: STATE_ACCESS_KEY_ID
       - name: AWS_SECRET_ACCESS_KEY
-        value_from: DIGGER_AWS_SECRET_ACCESS_KEY
+        value_from: STATE_SECRET_ACCESS_KEY
       commands:
       - name: ARM_MSI_ENDPOINT
         value_from: DEV_ARM_MSI_ENDPOINT
