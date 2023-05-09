@@ -1,6 +1,14 @@
 # Segregate cloud accounts
 
-You can configure Digger to use different accounts for storing locks and for the target infra to plan / apply. This can even be different cloud providers - eg locks in AWS while managing GCP.
+You can configure Digger to use different accounts for&#x20;
+
+1. Storing digger specific PR-level locks
+2. Terraform backend configuration
+3. The target infra to plan / apply.
+
+These all can even be different cloud providers - eg digger locks in AWS, state backend in Azure,  while managing infra on GCP.
+
+We rely on terraform expecting particular environment variables when authorising with cloud providers.
 
 {% hint style="info" %}
 This feature is under active development - [pull request](https://github.com/diggerhq/digger/pull/209)\
@@ -8,12 +16,22 @@ It is not yet available in a stable release.\
 To use it as-is, [configure Digger to run off a branch](https://docs.digger.dev/configuration/versioning)
 {% endhint %}
 
-Set variables in action like this
+Let's consider example where
+
+1. Digger locks are in one aws account
+2. Terraform state backend in another aws account
+3. Infra is on Azure, terraform is using Managed Service Identity for auth
 
 ```
 env:
-   PROJECT_1_ACCESS_KEY: ${{secrets.PROJECT_1_ACCESS_KEY}}
-   STATE_ACCESS_KEY: ${{secrets.PROJECT_1_ACCESS_KEY}}
+   DIGGER_AWS_ACCESS_KEY_ID: ${{secrets.DIGGER_AWS_ACCESS_KEY_ID}}
+   DIGGER_AWS_SECRET_ACCESS_KEY: ${{secrets.DIGGER_AWS_SECRET_ACCESS_KEY}}
+   STATE_ACCESS_KEY_ID: ${{secrets.STATE_AWS_KEY_ID}}
+   STATE_SECRET_ACCESS_KEY: ${{secrets.STATE_SECRET_ACCESS_KEY}}
+   DEV_ARM_MSI_ENDPOINT: £{{secrets.DEV_ARM_MSI_ENDPOINT}}
+   DEV_ARM_SUBSCRIPTION_ID: £{{secrets.DEV_ARM_SUBSCRIPTION_ID}}
+   DEV_ARM_TENANT_ID: £{{secrets.ARM_TENANT_ID}}
+   DEV_ARM_USE_MSI: £{{secrets.ARM_USE_MSI}}
 ```
 
 Then configure variables mapping in digger.yml
@@ -21,14 +39,23 @@ Then configure variables mapping in digger.yml
 ```
 projects:
 - name: dev
+  dir: .
   workflow: dev
 workflows:
   dev:
     envs:
       state:
-        - name: AWS_ACCESS_KEY_ID
-          valueFrom: STATE_ACCESS_KEY
+      - name: AWS_ACCESS_KEY_ID
+        value_from: STATE_ACCESS_KEY_ID
+      - name: AWS_SECRET_ACCESS_KEY
+        value_from: DIGGER_AWS_SECRET_ACCESS_KEY
       commands:
-        - name: AWS_ACCESS_KEY_ID
-          valueFrom: PROJECT_1_ACCESS_KEY
+      - name: ARM_MSI_ENDPOINT
+        value_from: DEV_ARM_MSI_ENDPOINT
+      - name: ARM_SUBSCRIPTION_ID
+        value_from: DEV_ARM_SUBSCRIPTION_ID
+      - name: ARM_TENANT_ID
+        value_from: DEV_ARM_TENANT_ID
+      - name: ARM_USE_MSI
+        value_from: DEV_ARM_USE_MSI
 ```
