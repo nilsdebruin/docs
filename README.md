@@ -32,6 +32,7 @@ This isn't a new problem. Naturally, there are great products out there solving 
 
 * [Atlantis](https://www.runatlantis.io/) - Terraform Pull Request Automation
 * [Terrakube](https://terrakube.org/) - The Open Source Alternative to Terraform Enterprise
+* [Hatchet](https://hatchet.run) - An all-in-one platform to automate, secure and monitor Terraform
 * [OTF](https://github.com/leg100/otf) - An open-source alternative to Terraform Enterprise
 
 ## How is Digger different?
