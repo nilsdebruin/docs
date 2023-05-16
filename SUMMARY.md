@@ -29,3 +29,4 @@
 * [Azure-specific](azure-specific/README.md)
   * [Setting up Azure + GH Actions](docs/cloud-providers/azure.md)
 * [Github Repo](https://github.com/diggerhq/digger)
+* [Run Digger on GitLab Pipelines](run-digger-on-gitlab-pipelines.md)
