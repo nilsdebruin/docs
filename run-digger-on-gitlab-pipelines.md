@@ -2,7 +2,10 @@
 
 ### How to configure Digger to run on GitLab Pipelines
 
-AWS Lambda function needs to be configured first
+AWS Lambda function needs to be configured first\
+GitLab webhook should be configured pointing to lambda's public url
+
+
 
 ### Configuring and Deploying AWS Lambda: Step-by-Step Guide
 
@@ -12,3 +15,11 @@ AWS Lambda function needs to be configured first
 4. Make sure that your AWS credentials are properly configured in the command-line interface (CLI). This ensures that you have the necessary permissions to deploy the Lambda function.
 5. Run the command `npm run build` in the root directory of the cloned repository. This command will build the necessary artifacts for the Lambda function.
 6. Finally, run the command `npm run deploy` in the same root directory. This will initiate the deployment process for the Lambda function using the configuration specified in the `serverless.yml` file.
+
+### Configure GitLab webhook
+
+1. Go to repo's Settings-> WebHooks
+2. Copy lambda's public URL into URL textbox
+3. Specify Secret token
+4. Tick 'Comments' and 'Merge Request events'
+5. Click 'Add webhook' button
