@@ -18,8 +18,10 @@ GitLab webhook should be configured pointing to lambda's public url
 
 ### Configure GitLab webhook
 
-1. Go to repo's Settings-> WebHooks
-2. Copy lambda's public URL into URL textbox
-3. Specify Secret token
-4. Tick 'Comments' and 'Merge Request events'
-5. Click 'Add webhook' button
+To configure the GitLab webhook, follow these steps:
+
+1. Go to the repository's Settings and select WebHooks.
+2. Copy the public URL of the Lambda function and paste it into the URL textbox.
+3. Specify a Secret token for secure communication.
+4. Tick the checkboxes for 'Comments' and 'Merge Request events' to enable the desired events.
+5. Finally, click the 'Add webhook' button to save the configuration.
