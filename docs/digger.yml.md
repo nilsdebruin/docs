@@ -2,13 +2,26 @@
 
 You can configure Digger by dropping a `digger.yml` file at the root level of your repo
 
-```
+```yaml
 projects:
 - name: my-first-app
   dir: app-one
 - name: my-second-app
   dir: app-two
+auto_merge: true
+collect_usage_data: true
+generate_projects:
+  include: projects/dev/*
+  exclude: projects/dev/docs
 ```
+
+auto\_merge: weather to merge pull requests automatically or not, default is false
+
+collect\_usage\_data: weather to collect usage data or not, default is false
+
+generate\_projects: generate projects based on provided include/exclude patterns, optional
+
+
 
 ## Projects
 
