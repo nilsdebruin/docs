@@ -2,8 +2,8 @@
 
 ### How to configure Digger to run on GitLab Pipelines
 
-AWS Lambda function needs to be configured first\
-GitLab webhook should be configured pointing to lambda's public url
+* AWS Lambda function needs to be configured first
+* GitLab webhook should be configured pointing to lambda's public url
 
 
 
