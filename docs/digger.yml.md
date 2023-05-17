@@ -15,11 +15,11 @@ generate_projects:
   exclude: projects/dev/docs
 ```
 
-auto\_merge: weather to merge pull requests automatically or not, default is false
+**auto\_merge**: weather to merge pull requests automatically or not, default is false
 
-collect\_usage\_data: weather to collect usage data or not, default is false
+**collect\_usage\_data**: weather to collect usage data or not, default is false
 
-generate\_projects: generate projects based on provided include/exclude patterns, optional
+**generate\_projects**: generate projects based on provided include/exclude patterns, optional
 
 
 
