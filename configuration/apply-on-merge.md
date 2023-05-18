@@ -11,4 +11,8 @@ workflow_configuration:
       on_commit_to_default: [digger apply]
 ```
 
+{% hint style="info" %}
+Limitation: right now there is no way to prevent running `apply` via comment, even if apply on merge is configured. Tracked in [#272](https://github.com/diggerhq/digger/issues/272)
+{% endhint %}
+
 The tradeoff then of course shifts to handling flaky applies. You'll need to raise a new PR for every change. But that might be preferable in some cases, for example for highly sensitive parts of production environments that are rarely changed. (eg the "foundation infra" layer with VPC definitions etc).
