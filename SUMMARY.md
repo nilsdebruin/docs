@@ -11,6 +11,7 @@
   * [Specifying version](configuration/versioning.md)
   * [Disable auto-checkout](configuration/disable-auto-checkout.md)
   * [Segregate cloud accounts](configuration/segregate-cloud-accounts.md)
+  * [Apply on Merge](configuration/apply-on-merge.md)
 * [Features](docs/features/README.md)
   * [Projects](docs/features/projects.md)
   * [Workspaces](docs/features/workspaces.md)
