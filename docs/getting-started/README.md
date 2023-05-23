@@ -1,14 +1,10 @@
 # Getting Started
 
-If you prefer to watch a video instead you can watch this demo tutorial:
+In this tutorial we will be using a repository in order to configure a terraform pipeline [https://github.com/diggerhq/digger\_demo\_multienv](https://github.com/diggerhq/digger\_demo\_multienv).
 
-{% embed url="https://www.loom.com/embed/e201e639a73941e0b5508710377a6106" %}
-Demo tutorial
-{% endembed %}
+If you prefer to watch a video instead you can watch this [demo tutorial](https://www.loom.com/share/e201e639a73941e0b5508710377a6106).
 
-
-
-In this tutorial we will be using a repository in order to configure a terraform pipeline [https://github.com/diggerhq/digger\_demo\_multienv](https://github.com/diggerhq/digger\_demo\_multienv). In this example we have terraform in two directories:
+In this example we have terraform in two directories:
 
 ```
 dev/
