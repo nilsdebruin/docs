@@ -16,3 +16,7 @@ workflows:
         - plan
         - run: checkov -d . --framework terraform
 ```
+
+{% hint style="info" %}
+This docs page needs improvement. Please consider contributing to [docs](https://github.com/diggerhq/docs). Here is the [relevant PR](https://github.com/diggerhq/digger/pull/267) implementing this feature
+{% endhint %}
