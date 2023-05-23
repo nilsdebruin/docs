@@ -15,6 +15,7 @@
   * [Using Workpaces](configuration/with-terraform-workpaces.md)
   * [Using Terragrunt](configuration/with-terragrunt.md)
   * [Apply on Merge](configuration/apply-on-merge.md)
+  * [Using Checkov](configuration/using-checkov.md)
 * [Features](docs/features/README.md)
   * [Projects](docs/features/projects.md)
   * [Workspaces](docs/features/workspaces.md)
