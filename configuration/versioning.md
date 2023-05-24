@@ -1,6 +1,6 @@
 # Specifying version
 
-## Use a pinned version of Digger
+## Use a pinned stable version of Digger
 
 To pin a specific release of Digger, you can use `@vX.Y.Z` tag in your workflow file:
 
@@ -11,20 +11,13 @@ To pin a specific release of Digger, you can use `@vX.Y.Z` tag in your workflow 
     ...
 ```
 
-## Use latest stable
-
-To always run the latest release, use `@main` tag in your workflow file:
-
-```
-- name: digger
-  uses: diggerhq/digger@main
-  env:
-    ...
-```
-
-## Use latest from a branch
+## Use latest commit from a branch
 
 You can also run latest commit from a specific branch
+
+{% hint style="info" %}
+Only use this at your own risk in non-production scenarios. This can break things!
+{% endhint %}
 
 ```
 - name: digger
