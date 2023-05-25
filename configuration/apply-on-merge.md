@@ -4,12 +4,15 @@ By default, Digger does not run apply on merge. This is a safer way to resolve t
 
 You can configure Digger to run apply on merge with the following entries in `digger.yml`
 
-```
-workflow_configuration:
-      on_pull_request_pushed: [digger plan]
-      on_pull_request_closed: [digger unlock]
-      on_commit_to_default: [digger apply]
-```
+<pre><code><strong>projects:
+</strong><strong> ...
+</strong><strong>workflows:
+</strong><strong>   dev:
+</strong><strong>      workflow_configuration:
+</strong>         on_pull_request_pushed: [digger plan]
+         on_pull_request_closed: [digger unlock]
+         on_commit_to_default: [digger apply]
+</code></pre>
 
 {% hint style="info" %}
 Limitation: right now there is no way to prevent running `apply` via comment, even if apply on merge is configured. Tracked in [#272](https://github.com/diggerhq/digger/issues/272)
