@@ -32,3 +32,22 @@ You can run plan / apply in a specified project by using the -p option in Github
 ```
 digger apply -p my-second-app
 ```
+
+## Include / exclude patterns
+
+You can specify wildcard and glob patterns in digger.yml to include multiple directories into a project:
+
+```
+projects:
+  - name: gke_shared_cluster_dev
+    dir: ./gke_shared_cluster/development
+    include_patterns: ["./modules/single_project/**"]
+    workflow: default_workflow
+  - name: gke_shared_cluster_non-prod
+    dirs: ./gke_shared_cluster/non-production
+    include_patterns: ["./modules/single_project/**"]
+    workflow: default_workflow
+  - name: gke_shared_cluster_prod
+    dir: ./gke_shared_cluster/production
+    include_patterns: ["./modules/single_project/**"]
+```
