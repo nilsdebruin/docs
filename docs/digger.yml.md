@@ -35,6 +35,10 @@ digger apply -p my-second-app
 
 ## Include / exclude patterns
 
+{% hint style="info" %}
+This docs page needs improvement. Please consider contributing to [docs](https://github.com/diggerhq/docs). Here is the [relevant PR](https://github.com/diggerhq/digger/pull/301) implementing this feature
+{% endhint %}
+
 You can specify wildcard and glob patterns in digger.yml to include multiple directories into a project:
 
 ```
