@@ -39,19 +39,30 @@ digger apply -p my-second-app
 This docs page needs improvement. Please consider contributing to [docs](https://github.com/diggerhq/docs). Here is the [relevant PR](https://github.com/diggerhq/digger/pull/301) implementing this feature
 {% endhint %}
 
-You can specify wildcard and glob patterns in digger.yml to include multiple directories into a project:
+You can specify wildcard and glob patterns in digger.yml to include multiple directories into a project. A common use case for this is if you have multiple environment folders and they import from a common `modules` directory:\
+
+
+```
+development/
+  main.tf
+production/
+  main.tf
+modules/
+  shared_moduleA/
+  dev_only_module/
+```
+
+If you wanted to trigger plans for all `modules/` folder in both dev and prod projects you would include them in the `include_patterns`  key.  Similarly you put anything which you want to ignore in the `exclude_patterns` key ( exclude takes precedence over includes).
 
 ```
 projects:
-  - name: gke_shared_cluster_dev
-    dir: ./gke_shared_cluster/development
-    include_patterns: ["./modules/single_project/**"]
+  - name: dev
+    dir: ./development
+    include_patterns: ["./modules/**"]
     workflow: default_workflow
-  - name: gke_shared_cluster_non-prod
-    dirs: ./gke_shared_cluster/non-production
-    include_patterns: ["./modules/single_project/**"]
-    workflow: default_workflow
-  - name: gke_shared_cluster_prod
-    dir: ./gke_shared_cluster/production
-    include_patterns: ["./modules/single_project/**"]
+  - name: prod
+    dir: ./production
+    include_patterns: ["./modules/**"]
+    exclude_patterns: ["./modules/dev_only_module/**"]
 ```
+
