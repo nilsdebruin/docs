@@ -1,5 +1,9 @@
 # Authenticating with OIDC on AWS
 
+{% hint style="info" %}
+support for AWS OIDC assume role paramter will be in v0.1.23
+{% endhint %}
+
 In order to set up OIDC simply swap the AWS Keys with assume role ARN and you are good to go. Here is an example, don't forget to replace the line starting in \*\* with your own ARN for the account.
 
 ```
@@ -20,7 +24,7 @@ jobs:
 
     steps:
       - name: digger run
-        uses: diggerhq/digger@v0.1.22
+        uses: diggerhq/digger@v0.1.23
         with:
           setup-aws: true
         **aws-role-to-assume: arn:aws:sts::{AccountID}:assumed-role/{RoleName}/{FunctionName}**
