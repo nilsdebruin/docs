@@ -27,6 +27,7 @@
 * [AWS-specific](docs/cloud-providers/README.md)
   * [Setting up DynamoDB Access for locks](docs/cloud-providers/aws.md)
   * [Setting up separate mgmt account](aws-specific/setting-up-separate-mgmt-account.md)
+  * [Authenticating with OIDC on AWS](cloud-providers/authenticating-with-oidc-on-aws.md)
 * [GCP-specific](docs/cloud-providers/gcp.md)
   * [Setting up GCP + GH Actions](gcp-specific/setting-up-gcp-+-gh-actions.md)
   * [Federated OIDC access](gcp-specific/federated-oidc-access.md)
