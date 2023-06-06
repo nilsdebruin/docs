@@ -34,5 +34,5 @@
   * [Store plans in a Bucket](gcp/store-plans-in-a-bucket.md)
 * [Azure-specific](azure-specific/README.md)
   * [Setting up Azure + GH Actions](docs/cloud-providers/azure.md)
-  * [Azure devops connection methods](azure-specific/azure-devops-connection-methods.md)
+  * [Azure devops locking connection methods](azure-specific/azure-devops-locking-connection-methods.md)
 * [Github Repo](https://github.com/diggerhq/digger)

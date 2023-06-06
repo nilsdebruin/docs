@@ -2,7 +2,7 @@
 description: Different ways to configure connection strings for Azure based locking
 ---
 
-# Azure devops connection methods
+# Azure devops locking connection methods
 
 **How does it work?**
 
