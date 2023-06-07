@@ -7,6 +7,7 @@
   * [Github Actions + AWS](getting-started/github-actions-+-aws.md)
   * [Github Actions + GCP](docs/getting-started/github-actions-and-gcp.md)
   * [GitLab Pipelines + AWS](getting-started/gitlab-pipelines-+-aws.md)
+  * [Azure DevOps](getting-started/azure-devops.md)
 * [Configuration](configuration/README.md)
   * [digger.yml](docs/digger.yml.md)
   * [Specifying version](configuration/versioning.md)
