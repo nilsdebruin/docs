@@ -25,6 +25,8 @@
   * [Plan preview](docs/features/plan-preview.md)
   * [Plan Persistence](features/plan-persistence.md)
   * [Custom workflows](docs/features/custom-workflows.md)
+* [Digger API](digger-api/README.md)
+  * [RBAC via OPA guide](digger-api/rbac-via-opa-guide.md)
 * [AWS-specific](docs/cloud-providers/README.md)
   * [Setting up DynamoDB Access for locks](docs/cloud-providers/aws.md)
   * [Setting up separate mgmt account](aws-specific/setting-up-separate-mgmt-account.md)
