@@ -40,3 +40,5 @@
   * [Setting up Azure + GH Actions](docs/cloud-providers/azure.md)
   * [Azure devops locking connection methods](azure-specific/azure-devops-locking-connection-methods.md)
 * [Github Repo](https://github.com/diggerhq/digger)
+* [Troubleshooting Errors](troubleshooting-errors/README.md)
+  * [Importing existing resources](troubleshooting-errors/importing-existing-resources.md)
