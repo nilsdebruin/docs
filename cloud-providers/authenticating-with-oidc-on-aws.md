@@ -21,6 +21,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    contents: write      # required to merge PRs
+    id-token: write      # required for workload-identity-federation
+    pull-requests: write # required to post PR comments
+    statuses: write      # required to validate combined PR status
 
     steps:
       - name: digger run
